@@ -1,0 +1,317 @@
+{
+  "rerenga_poto": {
+    "type": "sequence",
+    "parts": [
+      "<tohu_waa>",
+      "<tuumahi_poro>",
+      "<kiianga_tuuingoa> "
+    ]
+  },
+
+ "kiianga_tuuingoa": {
+    "type": "category",
+    "options": [
+      "<a_tuumoko>",
+      "<a_tuukapi_tuupou>",
+      "<puupanga>",
+      "<tuuwahi_phrase>",
+      "<tuutohu>"
+    ]
+  },
+
+  "a_tuumoko": {
+    "type": "category",
+    "options": [
+      {
+        "if": "two_names",
+        "then": "a <personal_name> rāua ko <personal_name>",
+        "else": "a <personal_name>"
+      },
+      "wai?"
+    ]
+  },
+
+  "a_tuukapi_tuupou": {
+    "type": "list",
+    "options": [
+      "koe",
+      "au",
+      "ahau",
+      "māua",
+      "mātou",
+      "kōrua",
+      "koutou",
+      "rāua",
+      "rātou"
+    ]
+  },
+
+  "personal_name": {
+    "type": "list",
+    "options": [
+      "Angel",
+      "Anna",
+      "Ash",
+      "Danica",
+      "Emma",
+      "Haddon",
+      "Helen",
+      "Jeremy",
+      "Leanne",
+      "Mihiteria",
+      "Neil",
+      "Sonya",
+      "Strachan"
+    ]
+  },
+
+  "puupanga": {
+    "type": "sequence",
+    "join": "",
+    "parts": [
+      "<puupanga_prefix>",
+      "<puupanga_class>",
+      "<puupanga_possessor>"
+    ]
+  },
+
+  "puupanga_prefix": {
+    "type": "list",
+    "options": ["", "t"]
+  },
+
+  "puupanga_class": {
+    "type": "list",
+    "options": ["ā", "ō"]
+  },
+
+  "puupanga_possessor": {
+    "type": "list",
+    "options": [
+      "ku <noun_animate>",
+      "u <noun_animate>",
+      "na <noun_animate>",
+      " rāua <noun_animate>",
+      " rātou <noun_animate>",
+      " māua <noun_animate>",
+      " mātou <noun_animate>",
+      " kōrua <noun_animate>",
+      " koutou <noun_animate>",
+      " māua ko <personal_name> <noun_animate>",
+      " kōrua ko <personal_name> <noun_animate>"
+    ]
+  },
+
+  "tuuwahi": {
+    "type": "list",
+    "options": [
+      "tēnei",
+      "ēnei",
+      "tēnā",
+      "ēnā",
+      "tērā",
+      "ērā"
+    ]
+  },
+
+"tuuwahi_noun_extension": {
+  "type": "category",
+  "options": [
+    "",
+    "<noun_animate>"
+  ]
+},
+
+"tuuwahi_phrase": {
+  "type": "sequence",
+  "parts": [
+    "<tuuwahi>",
+    "<tuuwahi_noun_extension>"
+  ]
+},
+
+  "tuutohu": {
+    "type": "list",
+    "options": [
+      "te <noun_animate>",
+      "ngā <noun_animate>",
+      "ngā <noun_animate> <number>",
+      "he <noun_animate>",
+      "ētahi o ngā <noun_animate>"
+    ]
+  },
+
+  "number": {
+    "type": "list",
+    "options": [
+      "e rua",
+      "e toru",
+      "e whā",
+      "e rima",
+      "e ono",
+      "e whitu",
+      "e waru",
+      "e iwa",
+      "tekau"
+    ]
+  },
+
+  "noun_inanimate": {
+    "type": "list",
+    "options": [
+      "hopi",
+      "tauera",
+      "whakaata",
+      "mēra",
+      "pouaka mēra",
+      "kūaha",
+      "pakitara",
+      "taiapa",
+      "arawhata",
+      "taputapu",
+      "huarahi",
+      "kāuta",
+      "tauhou",
+      "tote",
+      "kāreti",
+      "ārani",
+      "kīnaki",
+      "rimurimu",
+      "kūtai",
+      "naihi",
+      "tatau",
+      "urunga",
+      "kaiwhakatangitangi",
+      "kaitākaro",
+      "kaiwhakaako",
+      "kaiako",
+      "kaiāwhina",
+      "kaihautū",
+      "kaiārahi",
+      "ringatoi"
+    ]
+  },
+
+  "noun_animate": {
+    "type": "list",
+    "options": [
+      "kaiwhakatangitangi",
+      "kaitākaro",
+      "kaiwhakaako",
+      "kaiako",
+      "kaiāwhina",
+      "kaihautū",
+      "kaiārahi",
+      "ringatoi",
+      "kurī",
+      "korimako",
+      "kōtiro",
+      "tūī"
+    ]
+  },
+
+"tuumahi_whiti": {
+    "type": "list",
+    "options": [
+      "pīrangi",
+      "kaingākau",
+      "whiu",
+      "whaiwhai",
+      "mihi",
+      "hautū",
+      "rūkahu",
+      "tinei",
+      "tono",
+      "hakune",
+      "tuki",
+      "toromi",
+      "ūkui",
+      "waru",
+      "whakamoe",
+      "hoatu",
+      "whakawhiti",
+      "whakatū",
+      "whakanui",
+      "whakapiri",
+      "rewarewa",
+      "iri",
+      "wāhi",
+      "tahitahi",
+      "ārai",
+      "tūtaki",
+      "tārewa",
+      "tīraha",
+      "whakairi",
+      "tango",
+      "tāmaru",
+      "toto",
+      "tapahi"
+    ]
+  },
+
+  "tuumahi_poro": {
+    "type": "list",
+    "options": [
+"eke",
+"haere",
+"haere atu",
+"haere mai",
+"heke",
+"hī",
+"hīkoi",
+"hinga",
+"horoi",
+"hui",
+"huna",
+"kanikani",
+"kaukau",
+"kauhoe",
+"marama",
+"maremare",
+"mātakitaki",
+"moe",
+"noho",
+"neke",
+"oma",
+"paheke",
+"patero",
+"peke",
+"piki",
+"pīhau",
+"pīhauhau",
+"puta",
+"ruaki",
+"rere",
+"ruku",
+"tahitahi",
+"tae",
+"tārere",
+"tatari",
+"tākaro",
+"tīkākā",
+"titiro",
+"tomo",
+"tū",
+"tūwhera",
+"tūtaki",
+"ue",
+"uru",
+"waiata",
+"whakakā",
+"whakangaro",
+"whakaweto",
+"ngunguru"    ]
+  },
+
+  "tohu_waa": {
+    "type": "list",
+    "options": [
+      "I",
+      "I te",
+      "Kua",
+      "Kei te",
+      "Ka"
+    ]
+  }
+
+}
