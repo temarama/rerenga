@@ -8,6 +8,13 @@
     ]
   },
 
+  "kaaore_rerenga": {
+    "type": "sequence",
+    "parts": [
+      "<kaaore_phrase>"
+    ]
+  },
+
  "kiianga_tuuingoa": {
     "type": "category",
     "options": [
@@ -19,6 +26,33 @@
     ]
   },
 
+"kaaore_phrase": {
+  "type": "category",
+  "options": [
+    "<kaaore_regular>",
+    "<kaaore_ano>"
+  ]
+},
+
+"kaaore_regular": {
+  "type": "sequence",
+  "parts": ["Kāore", "<kiianga_tuuingoa>", "<joiner_regular>", "<tuumahi_poro>"]
+},
+
+"kaaore_ano": {
+  "type": "sequence",
+  "parts": ["Kāore anō", "<kiianga_tuuingoa>", "kia", "<tuumahi_poro>"]
+},
+
+  "joiner_regular": {
+    "type": "list",
+    "options": [
+      "i",
+      "i te",
+      "e"
+    ]
+  },
+
   "a_tuumoko": {
     "type": "category",
     "options": [
@@ -27,7 +61,7 @@
         "then": "a <personal_name> rāua ko <personal_name>",
         "else": "a <personal_name>"
       },
-      "wai?"
+      "wai"
     ]
   },
 
@@ -136,7 +170,6 @@
       "te <noun_animate>",
       "ngā <noun_animate>",
       "ngā <noun_animate> <number>",
-      "he <noun_animate>",
       "ētahi o ngā <noun_animate>"
     ]
   },
