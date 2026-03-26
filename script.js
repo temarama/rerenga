@@ -83,8 +83,16 @@ loadGrammar("grammar.json").then(() => {
   document.getElementById("gen").onclick = () => {
   let results = [];
 
+  results.push("Rerenga Poto:");
   for (let i = 0; i < 10; i++) {
     results.push(expand("rerenga_poto"));
+  }
+
+  results.push("");   // ← adds a blank line
+  results.push("Whakakāoretanga:");
+
+  for (let i = 0; i < 10; i++) {
+    results.push(expand("kaaore_rerenga"));
   }
   document.getElementById("output").textContent = results.join("\n");
 };
